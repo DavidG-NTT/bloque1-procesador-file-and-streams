@@ -1,18 +1,19 @@
 package com.ejercicio1;
 
-import static com.ejercicio1.process.ProcessFile.procesarArchivo;
+import com.ejercicio1.application.Data;
+import com.ejercicio1.infrastructure.ProcessFile;
 
 public class Main {
 
     public static void main(String[] args) {
         validateArgs(args);
-
-        procesarArchivo(args[0]);
+        Data datos = new Data();
+        ProcessFile.procesarArchivo(args[0], datos);
 
         // Imprimir resultados
         System.out.println("\n--- Resumen ---");
-        System.out.println("Total de personas cargadas correctamente: " + Datos.getPersonas().size());
-        System.out.println("Total de líneas incorrectas: " + Datos.getLineasIncorrectas());
+        System.out.println("Total de personas cargadas correctamente: " + datos.getPersonas().size());
+        System.out.println("Total de líneas incorrectas: " + datos.getLineasIncorrectas());
     }
 
     public static void validateArgs(String[] args) {

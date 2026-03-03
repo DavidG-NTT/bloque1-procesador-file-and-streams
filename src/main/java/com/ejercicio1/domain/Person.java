@@ -1,4 +1,4 @@
-package com.ejercicio1;
+package com.ejercicio1.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.ToString;

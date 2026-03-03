@@ -1,6 +1,6 @@
-package com.ejercicio1.validations;
+package com.ejercicio1.application;
 
-import com.ejercicio1.exceptions.InvalidLineFormatException;
+import com.ejercicio1.domain.exceptions.InvalidLineFormatException;
 
 public class Validator {
 

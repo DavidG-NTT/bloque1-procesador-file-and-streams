@@ -1,4 +1,4 @@
-package com.ejercicio1.exceptions;
+package com.ejercicio1.domain.exceptions;
 
 /**
  * Excepción para cuando una línea del CSV no cumple con el formato (name:town:age)
