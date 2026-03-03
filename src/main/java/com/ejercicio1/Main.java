@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         validateArgs(args);
 
-        procesarArchivo(args[0], Datos.getPersonas());
+        procesarArchivo(args[0]);
 
         // Imprimir resultados
         System.out.println("\n--- Resumen ---");
