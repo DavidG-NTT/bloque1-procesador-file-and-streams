@@ -1,7 +1,7 @@
 package com.ejercicio1;
 
 import com.ejercicio1.application.Data;
-import com.ejercicio1.application.FilteringStream;
+import com.ejercicio1.application.FiltersMain;
 import com.ejercicio1.infrastructure.ProcessFile;
 
 public class Main {
@@ -19,7 +19,7 @@ public class Main {
 
         // Filtrar y mostrar resultados usando
         System.out.println("\n\nFILTROS CON STREAMS");
-        FilteringStream.filtrosStreams(datos);
+        FiltersMain.filtrosStreams(datos);
     }
 
     public static void validateArgs(String[] args) {
