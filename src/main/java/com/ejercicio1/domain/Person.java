@@ -1,6 +1,7 @@
 package com.ejercicio1.domain;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.ToString;
 
 /**
@@ -9,6 +10,7 @@ import lombok.ToString;
  */
 @AllArgsConstructor
 @ToString
+@Getter
 public class Person {
     private String name;
     private String town;
