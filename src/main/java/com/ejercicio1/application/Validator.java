@@ -1,22 +1,22 @@
 package com.ejercicio1.application;
 
-import com.ejercicio1.domain.exceptions.InvalidLineFormatException;
+import com.ejercicio1.shared.exceptions.InvalidLineFormatException;
 
 public class Validator {
 
-    public static void validarNombre(String name, int numeroLinea) throws InvalidLineFormatException {
+    public static void validateName(String name, int numberLine) throws InvalidLineFormatException {
         if (name.trim().isEmpty()) {
-            throw new InvalidLineFormatException(numeroLinea, "El nombre no puede estar vacío");
+            throw new InvalidLineFormatException(numberLine, "The name cannot be empty");
         }
     }
 
-    public static void validarEdad(int age, int numeroLinea) throws InvalidLineFormatException {
+    public static void validateAge(int age, int numberLine) throws InvalidLineFormatException {
         try {
             if (age < 0) {
-                throw new InvalidLineFormatException(numeroLinea, "La edad no puede ser negativa");
+                throw new InvalidLineFormatException(numberLine, "Age cannot be negative");
             }
         } catch (NumberFormatException e) {
-            throw new InvalidLineFormatException(numeroLinea, "La edad debe ser un número entero");
+            throw new InvalidLineFormatException(numberLine, "The age must be an integer");
         }
     }
 }

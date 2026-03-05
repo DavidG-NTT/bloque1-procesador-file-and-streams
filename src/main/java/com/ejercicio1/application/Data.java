@@ -9,19 +9,19 @@ import java.util.List;
 @Getter
 public class Data {
 
-    private int lineasIncorrectas = 0;
-    private int numeroLinea = 0;
-    private final List<Person> personas = new ArrayList<>();
+    private int incorrectLine = 0;
+    private int lineNumber = 0;
+    private final List<Person> people = new ArrayList<>();
 
-    public void agregarPersona(Person persona) {
-        personas.add(persona);
+    public void addPerson(Person person) {
+        people.add(person);
     }
 
-    public void incrementarLineasIncorrectas() {
-        lineasIncorrectas++;
+    public void increaseIncorrectLines() {
+        incorrectLine++;
     }
 
-    public void incrementarNumeroLinea() {
-        numeroLinea++;
+    public void increaseLineNumber() {
+        lineNumber++;
     }
 }
